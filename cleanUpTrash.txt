@@ -1,0 +1,6 @@
+    def unlink(self,connectedCell,connected=True):
+            del self.links[connectedCell]
+            if ( connected ):
+                connectedCell.unlink(self,False)
+    def linkKey(self):
+        return self.links.keys();
